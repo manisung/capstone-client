@@ -1,0 +1,49 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.navbar-vertical {
+    width: 80%;
+    height: auto;
+    background-color: $background-color-dark;
+    // display: none;
+}
+
+ul {
+    font-family: $cta-font;
+    font-size: 0.7rem;
+    list-style: none;
+    color: $text-color;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 2rem;
+    padding: 2rem 0rem;
+}
+
+li {
+    cursor: pointer;
+}
+
+.logo-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 6rem;
+}
+
+.instagram-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.facebook-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+    margin-right: 0.5rem;
+}
+
+.youtube-logo {
+    width: 1.5rem;
+    height: 1.5rem;
+}
+

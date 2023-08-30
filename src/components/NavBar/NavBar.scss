@@ -1,0 +1,61 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.title-wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+
+.title {
+    width: 100%;
+    height: 4rem;
+    font-family: $title-font, cursive;
+    font-size: 1.5rem;
+    color: $text-color;
+    background-color: #000000;
+    text-transform: uppercase;
+    text-align: center;
+    // display: none;
+    text-decoration: none;
+}
+
+.navigation-menu {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1.3rem;
+    left: 0.8rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.first-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: $text-color;
+}
+.second-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: $background-color-dark;
+}
+.third-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: $text-color;
+}
+.fourth-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: $background-color-dark;
+}
+.fifth-bar {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: $text-color;
+}
