@@ -15,20 +15,23 @@ function NavBarVertical(props) {
         <div className={`navbar-vertical ${props.className}`}>
         <div>
             <ul>
-                <Link><li>about</li></Link>
-                <Link><li>videos</li></Link>
-                <Link><li>events</li></Link>
-                <Link><li>store</li></Link>
-                <Link to="/members"><li>members</li></Link>
+                <Link onClick={props.onClick} to="/about"><li>about</li></Link>
+                <Link onClick={props.onClick} to="/videolist"><li>videos</li></Link>
+                <Link onClick={props.onClick} to="/events"><li>events</li></Link>
+                <Link onClick={props.onClick} to="/store"><li>store</li></Link>
+                <Link onClick={props.onClick} to="/members"><li>members</li></Link>
             </ul>
+            
         </div>
         <div className="logo-wrapper">
-        <img className="instagram-logo" src={instagramLogo} alt="Instagram Logo" />
+        <a href="https://instagram.com/yumichung1221?igshid=MzRlODBiNWFlZA=="><img className="instagram-logo" src={instagramLogo} alt="Instagram Logo" /></a>
         <img className="facebook-logo" src={facebookLogo} alt="Facebook Logo" />
-        <img className="youtube-logo" src={youtubeLogo} alt="Youtube Logo" />
+        <a href="https://youtube.com/@yumichung1221?si=v08ze49mA3KNPYSv"><img className="youtube-logo" src={youtubeLogo} alt="Youtube Logo" /></a>
         </div>
         </div>
     )
+
+  
 }
 
 export default NavBarVertical;
