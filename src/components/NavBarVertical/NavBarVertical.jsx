@@ -3,10 +3,16 @@ import instagramLogo from "../../assets/icons/instagram-logo.svg"
 import facebookLogo from "../../assets/icons/facebook-logo.svg"
 import youtubeLogo from "../../assets/icons/youtube-logo.svg"
 import { Link } from "react-router-dom";
+// import { useState } from "react";
 
-function NavBarVertical() {
+function NavBarVertical(props) {
+
+    console.log("props", props)
+
+
     return (
-        <div className="navbar-vertical">
+        
+        <div className={`navbar-vertical ${props.className}`}>
         <div>
             <ul>
                 <Link><li>about</li></Link>

@@ -2,11 +2,20 @@
 @use "../../styles/variables" as *;
 
 .navbar-vertical {
-    width: 80%;
-    height: auto;
+    width: 100vw;
+    height: 100vh;
     background-color: $background-color-dark;
-    // display: none;
+    position: fixed;
+    top: 4rem;
+    left: 0;
+
 }
+
+.hidden {
+    display: none;
+}
+
+
 
 ul {
     font-family: $cta-font;
@@ -46,4 +55,5 @@ li {
     width: 1.5rem;
     height: 1.5rem;
 }
+
 

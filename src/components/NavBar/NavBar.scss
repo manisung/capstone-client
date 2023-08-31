@@ -3,24 +3,27 @@
 
 .title-wrapper {
     width: 100%;
+    // height:4rem;
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-
 }
-
 
 .title {
     width: 100%;
     height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+
     font-family: $title-font, cursive;
     font-size: 1.5rem;
     color: $text-color;
     background-color: #000000;
     text-transform: uppercase;
     text-align: center;
-    // display: none;
     text-decoration: none;
 }
 
