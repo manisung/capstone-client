@@ -1,9 +1,32 @@
 import "./VideosListPage.scss"
+import { useState, useEffect } from "react";
+import axios from "axios";
+import VideosList from "../../components/VideosList/VideosList";
 
 function VideosListPage() {
+    const[videos, setVideos] = useState ([]);
+   
+    useEffect(() => {   
+          axios
+            .get(
+              `http://localhost:${process.env.REACT_APP_PORT}/videos`
+            )
+            .then((response) => {   
+                setVideos(response.data);
+            }) 
+            .catch((err) => console.error(err));
+      }, []);
+
+      
+
+
     return(
-        <div>this is the video page</div>
+        <VideosList videos={videos}/>
     )
 }
 
 export default VideosListPage;
+
+
+// http://localhost:8080/images/
+// http://localhost:8080/videos/

@@ -11,6 +11,7 @@ import VideosListPage from './pages/VideosListPage/VideosListPage';
 import EventsPage from './pages/EventsPage/EventsPage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import AboutPage from './pages/AboutPage/AboutPage';
+import StorePage from './pages/StorePage/StorePage';
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       <Route path="/videolist" element={<VideosListPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/admins/:id" element={<AdminPage />} />
+      <Route path="/store" element={<StorePage />} />
     </Routes>
     <Footer text="Yumi Chung Official Website" />
   </BrowserRouter>

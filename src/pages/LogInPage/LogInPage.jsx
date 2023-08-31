@@ -1,7 +1,22 @@
 import "./LogInPage.scss";
 import Button from "../../components/Button/Button";
+import { useNavigate } from "react-router-dom";
+
 
 function LogInPage() {
+
+  const navigate = useNavigate();
+
+  function handleSignIn() {
+      navigate("/users/1");
+      // if here needs to be Dynamic, how? now is just faking it
+  }
+
+  function handleBackToMember() {
+    navigate("/members");
+  }
+  
+
     return(
         <div>
         <div>Log in to your account</div>
@@ -33,9 +48,9 @@ function LogInPage() {
                 name="password"
                 placeholder="Password"
               />
-              <Button text="Sign In" />
+              <Button onClick={handleSignIn} text="Sign In" />
               {/* click sign in just fake to a user page */}
-              <Button text="Back" />
+              <Button onClick={handleBackToMember} text="Back" />
               <div>Forgot your password?</div>
             </div>
         </form>
