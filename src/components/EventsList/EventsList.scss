@@ -1,0 +1,36 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+li {
+    font-family: sans-serif;
+}
+
+.event-name-wrapper{
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.event-description-wrapper {
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.event-status-wrapper {
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.event-location-wrapper {
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.event-date-wrapper {
+    display: flex;
+    font-size: 0.7rem;
+}
+
+.event-deadline-wrapper {
+    display: flex;
+    font-size: 0.7rem;
+}
