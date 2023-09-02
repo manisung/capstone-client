@@ -1,10 +1,36 @@
 import './App.scss';
+import NavBar from './components/NavBar/NavBar';
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import LandingPage from './pages/LandingPage/LandingPage';
+// import { useEffect } from "react";
+import Footer from "./components/Footer/Footer";
+import MembersPage from './pages/MembersPage/MembersPage';
+import LogInPage from './pages/LogInPage/LogInPage';
+import UserPage from './pages/UserPage/UserPage';
+import VideosListPage from './pages/VideosListPage/VideosListPage';
+import EventsPage from './pages/EventsPage/EventsPage';
+import AdminPage from './pages/AdminPage/AdminPage';
+import AboutPage from './pages/AboutPage/AboutPage';
+import StorePage from './pages/StorePage/StorePage';
 
 function App() {
   return (
-    <div className="App">
-     <h1>This is my react app</h1>
-    </div>
+    <BrowserRouter>
+    <NavBar />
+    <Routes>
+      <Route path="/" element={<Navigate to='/landingpage' />} />
+      <Route path="/landingpage" element={<LandingPage />} />
+      <Route path="/about" element={<AboutPage />} />
+      <Route path="/members" element={<MembersPage />} />
+      <Route path="/login" element={<LogInPage />} />
+      <Route path="/user" element={<UserPage />} />
+      <Route path="/videolist" element={<VideosListPage />} />
+      <Route path="/events" element={<EventsPage />} />
+      <Route path="/admins/:id" element={<AdminPage />} />
+      <Route path="/store" element={<StorePage />} />
+    </Routes>
+    <Footer text="Yumi Chung Official Website" />
+  </BrowserRouter>
   );
 }
 

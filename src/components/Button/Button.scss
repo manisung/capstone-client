@@ -1,0 +1,15 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+
+.button {
+    width: 7rem;
+    height: 2rem;
+    font-family: sans-serif;
+    font-weight: 700;
+    border-radius: 2rem;
+    background-color: $background-color-dark;
+    color: $text-color;
+    text-transform: uppercase;
+    padding: 0.5rem;
+}
