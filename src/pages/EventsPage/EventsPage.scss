@@ -1,2 +1,11 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.event__title {
+  color: var(--color-typography-title, #120d26);
+  font-family: Airbnb Cereal App;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

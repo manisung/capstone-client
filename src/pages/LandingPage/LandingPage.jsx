@@ -5,7 +5,6 @@ import Hero from "../../components/Hero/Hero";
 function LandingPage() {
     return(
         <div>
-        {/* <NavBarVertical /> */}
         <Hero />
         </div>
     )

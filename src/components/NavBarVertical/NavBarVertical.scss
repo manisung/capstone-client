@@ -3,7 +3,7 @@
 
 .navbar-vertical {
     width: 100vw;
-    height: 100vh;
+    height: $mobile-screen-height;
     background-color: $background-color-dark;
     position: absolute;
     top: 4rem;
@@ -19,7 +19,7 @@
 
 ul {
     font-family: $cta-font;
-    font-size: 0.7rem;
+    font-size: 1rem;
     list-style: none;
     color: $text-color;
     text-transform: uppercase;
@@ -32,6 +32,7 @@ ul {
 li {
     cursor: pointer;
     text-decoration: none;
+    padding-bottom: 1.5rem;
 }
 
 .logo-wrapper{
@@ -42,27 +43,27 @@ li {
 }
 
 .instagram-logo {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 .facebook-logo {
-    width: 1.5rem;
-    height: 1.5rem;
-    margin-right: 0.5rem;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1rem;
 }
 
 .youtube-logo {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
 }
 
 .close-icon {
-    width: 1.5rem;
-    height: 1.5rem;
+    width: 2rem;
+    height: 2rem;
     position: relative;
     top: 1rem;
-    left: 15rem;
+    left: 20rem;
     cursor: pointer;
 }

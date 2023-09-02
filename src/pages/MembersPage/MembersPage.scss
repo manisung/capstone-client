@@ -1,2 +1,32 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.memberpage {
+    width: 100%;
+    height: $mobile-screen-height;
+    background-color: $text-color;
+    &__sub-wrapper{
+        display: flex;
+        flex-direction: column;
+        padding-top: 6rem;
+    }
+    &__join{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 3rem;
+    }
+    &__signin{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    &__join-text {
+        padding-bottom: 1rem;
+    }
+    &__signin-text {
+        padding-bottom: 1rem;
+    }
+}

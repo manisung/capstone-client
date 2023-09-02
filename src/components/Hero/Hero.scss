@@ -2,10 +2,15 @@
 @use "../../styles/variables" as *;
 
 .hero {
+    display: flex;
+    // justify-content: center;
     width: 20rem;
     height: auto;
+    // background-color: $background-color-dark;
     &__image {
         object-fit: cover;
-        object-position: -20rem;
+
     }
 }
+
+//TODO: backgroud how to add it to be black to be responsive

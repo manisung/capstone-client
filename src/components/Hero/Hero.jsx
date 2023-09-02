@@ -1,5 +1,6 @@
 import "./Hero.scss";
-import heroPhoto from "../../assets/images/hero.jpg"
+import heroPhoto from "../../assets/images/hero.png"
+
 
 function Hero() {
     return(

@@ -11,15 +11,17 @@ function handleLogIn() {
 }
 
   return (
-    <div className="">
+    <div className="memberpage">
       <div>{/* need to add a pic */}</div>
-      <div>
-        <div>Becaome a member</div>
+      <div className="memberpage__sub-wrapper">
+      <div className="memberpage__join">
+        <div className="memberpage__join-text">Become a member</div>
         <Button text="Join Now!" />
       </div>
-      <div>
-        <div>Already a member?</div>
+      <div className="memberpage__signin">
+        <div className="memberpage__signin-text">Already a member?</div>
         <Button onClick={handleLogIn} text="Log In" />
+      </div>
       </div>
     </div>
   );

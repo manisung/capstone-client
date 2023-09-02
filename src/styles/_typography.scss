@@ -27,3 +27,13 @@
     font-style: normal;
     font-display: swap;
 }
+
+@font-face {
+    font-family: 'Rye';
+    src: url('../assets/fonts/Rye-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Monoton-Regular.woff') format('woff'),
+        url('../assets/fonts/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}

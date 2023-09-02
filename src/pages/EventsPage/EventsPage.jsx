@@ -6,6 +6,8 @@ import "./EventsPage.scss";
 function EventsPage() {
     const[events, setEvents] = useState ([]);
 
+    console.log("events", events);
+
     useEffect(() => {
           axios
             .get(
@@ -18,7 +20,10 @@ function EventsPage() {
         }, []);
 
     return (
+        <div>
+        <div>Events</div>
         <EventsList events={events}/>
+        </div>
     )
 }
 
