@@ -12,6 +12,7 @@ import EventsPage from './pages/EventsPage/EventsPage';
 import AdminPage from './pages/AdminPage/AdminPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import StorePage from './pages/StorePage/StorePage';
+import SignUpPage from './pages/SignUpPage/SignUpPage';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
       <Route path="/landingpage" element={<LandingPage />} />
       <Route path="/about" element={<AboutPage />} />
       <Route path="/members" element={<MembersPage />} />
+      <Route path="/signup" element={<SignUpPage />} />
       <Route path="/login" element={<LogInPage />} />
       <Route path="/user" element={<UserPage />} />
       <Route path="/videolist" element={<VideosListPage />} />
