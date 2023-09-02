@@ -9,10 +9,12 @@ function VideosList(props) {
             <li key={video.id}>
               <video
                 className=""
-                poster={props.video.image}
-                src={props.video.video}
+                poster={video.image}
+                src={video.video}
                 controls
               ></video>
+              <p>{video.title}</p>
+              <p>{video.description}</p>
             </li>
           );
         })}

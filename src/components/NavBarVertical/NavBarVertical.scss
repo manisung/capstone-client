@@ -5,10 +5,10 @@
     width: 100vw;
     height: 100vh;
     background-color: $background-color-dark;
-    position: fixed;
+    position: absolute;
     top: 4rem;
     left: 0;
-
+    // border: .0625rem solid $text-color;
 }
 
 .hidden {
@@ -58,4 +58,11 @@ li {
     height: 1.5rem;
 }
 
-
+.close-icon {
+    width: 1.5rem;
+    height: 1.5rem;
+    position: relative;
+    top: 1rem;
+    left: 15rem;
+    cursor: pointer;
+}

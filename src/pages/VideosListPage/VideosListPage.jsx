@@ -5,6 +5,8 @@ import VideosList from "../../components/VideosList/VideosList";
 
 function VideosListPage() {
     const[videos, setVideos] = useState ([]);
+
+    console.log("videos", videos);
    
     useEffect(() => {   
           axios
@@ -13,6 +15,7 @@ function VideosListPage() {
             )
             .then((response) => {   
                 setVideos(response.data);
+                console.log("response.data", response.data);
             }) 
             .catch((err) => console.error(err));
       }, []);

@@ -7,7 +7,7 @@ function UserEventsList(props) {
         {props.selectedUserEvents?.map((selectedUserEvent) => {
           return (
             <li key={selectedUserEvent.id}>
-              <p>Event Name</p>
+              <p>Event Name {selectedUserEvent.id}</p>
               {/* maybe just event name, when click then show more information, think how this will be better*/}
               <p>{selectedUserEvent.event_name}</p>
               <p>Event Description</p>

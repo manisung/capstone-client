@@ -1,14 +1,19 @@
 import "./LogInPage.scss";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
+// import { useParams } from "react-router-dom";
 
 
 function LogInPage() {
 
   const navigate = useNavigate();
+  // const { id } = useParams();
 
   function handleSignIn() {
-      navigate("/users/1");
+    
+    localStorage.setItem("userId", 1 )
+
+      navigate("/user");
       // if here needs to be Dynamic, how? now is just faking it
   }
 

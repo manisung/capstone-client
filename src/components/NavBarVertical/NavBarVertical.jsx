@@ -4,6 +4,7 @@ import facebookLogo from "../../assets/icons/facebook-logo.svg"
 import youtubeLogo from "../../assets/icons/youtube-logo.svg"
 import { Link } from "react-router-dom";
 // import { useState } from "react";
+import closeIcon from "../../assets/icons/close-circle.svg"
 
 function NavBarVertical(props) {
 
@@ -13,6 +14,7 @@ function NavBarVertical(props) {
     return (
         
         <div className={`navbar-vertical ${props.className}`}>
+        <div onClick={props.onClick}><img className="close-icon" src={closeIcon} alt="Close Icon"/></div>
         <div>
             <ul>
                 <Link onClick={props.onClick} to="/about"><li>about</li></Link>
