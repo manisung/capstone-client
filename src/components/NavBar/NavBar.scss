@@ -20,7 +20,7 @@
 
     font-family: $title-font, cursive;
     font-size: 1.5rem;
-    color: $text-color;
+    color: $cta-color;
     background-color: #000000;
     text-transform: uppercase;
     text-align: center;
@@ -40,7 +40,7 @@
 .first-bar {
     width: 2rem;
     height: 0.25rem;
-    background-color: $text-color;
+    background-color: $cta-color;
 }
 .second-bar {
     width: 2rem;
@@ -50,7 +50,7 @@
 .third-bar {
     width: 2rem;
     height: 0.25rem;
-    background-color: $text-color;
+    background-color: $cta-color;
 }
 .fourth-bar {
     width: 2rem;
@@ -60,5 +60,5 @@
 .fifth-bar {
     width: 2rem;
     height: 0.25rem;
-    background-color: $text-color;
+    background-color: $cta-color;
 }

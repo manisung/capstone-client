@@ -21,7 +21,7 @@ function EventsPage() {
 
     return (
         <div>
-        <div>Events</div>
+        <div className="event__title">Events</div>
         <EventsList events={events}/>
         </div>
     )

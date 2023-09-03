@@ -1,38 +1,58 @@
-@font-face {
-    font-family: 'Tilt Prism';
-    src: url('../assets/fonts/TiltPrism-Regular.woff2') format('woff2'),
-        url('../assets/fonts/TiltPrism-Regular.woff') format('woff'),
-        url('../assets/fonts/TiltPrism-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'Tilt Prism';
+//     src: url('../assets/fonts/TiltPrism-Regular.woff2') format('woff2'),
+//         url('../assets/fonts/TiltPrism-Regular.woff') format('woff'),
+//         url('../assets/fonts/TiltPrism-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: 'Press Start 2P';
-    src: url('../assets/fonts/PressStart2P-Regular.woff2') format('woff2'),
-        url('../assets/fonts/PressStart2P-Regular.woff') format('woff'),
-        url('../assets/fonts/PressStart2P-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'Press Start 2P';
+//     src: url('../assets/fonts/PressStart2P-Regular.woff2') format('woff2'),
+//         url('../assets/fonts/PressStart2P-Regular.woff') format('woff'),
+//         url('../assets/fonts/PressStart2P-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
-@font-face {
-    font-family: 'Monoton';
-    src: url('../assets/fonts/Monoton-Regular.woff2') format('woff2'),
-        url('../assets/fonts/Monoton-Regular.woff') format('woff'),
-        url('../assets/fonts/Monoton-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
+// @font-face {
+//     font-family: 'Monoton';
+//     src: url('../assets/fonts/Monoton-Regular.woff2') format('woff2'),
+//         url('../assets/fonts/Monoton-Regular.woff') format('woff'),
+//         url('../assets/fonts/Monoton-Regular.ttf') format('truetype');
+//     font-weight: normal;
+//     font-style: normal;
+//     font-display: swap;
+// }
 
 @font-face {
     font-family: 'Rye';
     src: url('../assets/fonts/Rye-Regular.woff2') format('woff2'),
         url('../assets/fonts/Monoton-Regular.woff') format('woff'),
         url('../assets/fonts/Monoton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../assets/fonts/Lora-Italic.woff2') format('woff2'),
+        url('../assets/fonts/Lora-Italic.woff') format('woff'),
+        url('../assets/fonts/Lora-Italic.ttf') format('truetype');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Lora';
+    src: url('../assets/fonts/Lora-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Lora-Regular.woff') format('woff'),
+        url('../assets/fonts/Lora-Regular.ttf') format('truetype');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
