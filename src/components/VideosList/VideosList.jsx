@@ -1,20 +1,27 @@
 import "./VideosList.scss";
 
+//TODO: Added styles, and don‘t flow over the vertical menu
+
 function VideosList(props) {
   return (
-    <div>
+    <div className="videoslist">
+      <div className="videoslist__title">Music Videos</div>
       <ul>
         {props.videos?.map((video) => {
           return (
-            <li key={video.id}>
+            <li className="videoslist__video-wrapper" key={video.id}>
               <video
-                className=""
+                className="videoslist__video"
                 poster={video.image}
                 src={video.video}
                 controls
               ></video>
-              <p>{video.title}</p>
-              <p>{video.description}</p>
+              <div className="videoslist__description-wrapper">
+              <p className="videoslist__description">{video.description}</p>
+              <p className="videoslist__colon">: </p>
+              <p className="videoslist__songname">{video.title}</p>
+              </div>
+              
             </li>
           );
         })}

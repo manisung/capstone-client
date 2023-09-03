@@ -2,13 +2,12 @@ import "./UserInfoCard.scss";
 
 function UserInfoCard(props) {
   return (
-    <div>
-      <div>User Information</div>
+    <div className="userinfo"> 
+      <div className="userinfo__title">User Information</div>
+      <div className="userinfo__name-wrapper">
       <div>Name</div>
       <div>{props.selectedUser.name}</div>
-
-
-      <div>Find More Event</div>
+      </div>
       {/* link to event page */}
     </div>
 

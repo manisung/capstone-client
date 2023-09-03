@@ -7,3 +7,5 @@ function StorePage() {
 }
 
 export default StorePage;
+
+//TODO: at least need to attached a picture of the store to show what to build for the future

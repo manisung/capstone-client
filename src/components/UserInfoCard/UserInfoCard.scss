@@ -1,2 +1,14 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.userinfo{
+    &__title {
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem;
+    }
+}
