@@ -1,0 +1,31 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+
+.videoslist{
+&__video {
+ width: 90%;
+ border-radius: 1rem;
+ z-index: -1;
+}
+&__video-wrapper{
+    text-transform: none;
+}
+&__description-wrapper{
+    display: flex;
+    justify-content: center;
+    color: $background-color-dark;
+    font-family: $title-font;
+
+}
+&__description{
+    
+
+}
+&__colon{
+    padding-right:1rem;
+}
+&__songtitle{
+
+}
+}

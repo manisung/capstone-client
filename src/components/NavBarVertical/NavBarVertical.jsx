@@ -17,11 +17,12 @@ function NavBarVertical(props) {
         <div onClick={props.onClick}><img className="close-icon" src={closeIcon} alt="Close Icon"/></div>
         <div>
             <ul>
-                <Link onClick={props.onClick} to="/about"><li>about</li></Link>
-                <Link onClick={props.onClick} to="/videolist"><li>videos</li></Link>
-                <Link onClick={props.onClick} to="/events"><li>events</li></Link>
-                <Link onClick={props.onClick} to="/store"><li>store</li></Link>
-                <Link onClick={props.onClick} to="/members"><li>members</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/about"><li>about</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/videolist"><li>videos</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/events"><li>events</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/store"><li>store</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/members"><li>members</li></Link>
+                <Link className="navbar-vertical__no-text-decoration" onClick={props.onClick} to="/user"><li>My Information</li></Link>
             </ul>
             
         </div>
