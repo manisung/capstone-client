@@ -46,9 +46,11 @@ function UserPage() {
 
     return(
         <div>
-          {loggedIn ? <p>I'm logged in!</p> : <p>I'm not logged in!!</p>}
+          
             <UserInfoCard selectedUser={selectedUser} />
+            {loggedIn ? <p>You're logged in!</p> : <p>I'm not logged in!!</p>}
             <UserEventsList selectedUserEvents={selectedUserEvents} />
+            <div>Find More Event</div>
         </div>
     )
 }

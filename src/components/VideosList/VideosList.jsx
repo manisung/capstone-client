@@ -4,7 +4,8 @@ import "./VideosList.scss";
 
 function VideosList(props) {
   return (
-    <div>
+    <div className="videoslist">
+      <div className="videoslist__title">Music Videos</div>
       <ul>
         {props.videos?.map((video) => {
           return (
