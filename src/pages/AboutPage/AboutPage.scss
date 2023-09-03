@@ -1,7 +1,9 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-.about {
+.about{
+    background-color: $cta-color;
+&__title {
     font-family: $title-font;
     text-transform: uppercase;
     font-size: 20px;
@@ -9,4 +11,48 @@
     font-weight: 400;
     line-height: normal;
     padding: 2rem;
+}
+&__content-wrapper {
+    margin: 1rem;
+    font-family: $text-font;
+    display: flex;
+    flex-direction: column;
+}
+&__sub-title {
+    font-family: $text-font;
+    font-style: italic;
+    font-weight: 700;
+    padding: 1rem;
+    font-size: 1rem;
+}
+&__image-wrapper{
+width: 90%;
+background-color: $background-color-dark;
+display: flex;
+justify-content: center;
+border-radius: 1rem;
+margin: auto;
+}
+&__image-1 {
+    width: 80%;
+    height: 12.9375rem;
+    object-fit: cover;
+}
+&__image-2 {
+    width: 80%;
+    height: 12.9375rem;
+    object-fit: cover;
+    object-position: 0 -2.9rem;
+}
+&__image-3 {
+    width: 80%;
+    height: 12.9375rem;
+    object-fit: cover;
+}
+
+&__description {
+    font-size: 0.8rem;
+    line-height: 1.5;
+    padding: 1rem;
+}
 }
