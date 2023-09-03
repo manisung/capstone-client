@@ -1,36 +1,41 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-li {
-    font-family: sans-serif;
-}
+.event-card {
+  width: 70%;
+  font-size: 0.75rem;
+  display: flex;
+  margin: auto;
+  align-items: center;
+  border-radius: 0.5rem;
+  background-color: $cta-color;
+  padding: 1rem;
 
-.event-name-wrapper{
+  &__image-wrapper {
     display: flex;
-    font-size: 0.7rem;
-}
+  }
 
-.event-description-wrapper {
+  &__image {
+    width: 105px;
+    height: 105px;
+    flex-shrink: 0;
+    border: 1px solid $cta-color;
+    border-radius: 0.5rem;
+  }
+  &__info {
     display: flex;
-    font-size: 0.7rem;
-}
-
-.event-status-wrapper {
+    color: $background-color-dark;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    margin: auto;
+    align-items: center;
+  }
+  &__name {
+  }
+  &__location {
     display: flex;
-    font-size: 0.7rem;
-}
-
-.event-location-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
-
-.event-date-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
-
-.event-deadline-wrapper {
-    display: flex;
-    font-size: 0.7rem;
+  }
+  &__location-icon {
+    padding-right: 0.5rem;
+  }
 }
