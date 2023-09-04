@@ -7,8 +7,10 @@
     background-color: $background-color-dark;
     position: absolute;
     top: 4rem;
+    // left: -100%;
     left: 0;
     text-decoration: none;
+    // transition: left 0.3s ease;
     // border: .0625rem solid $text-color;
     &__no-text-decoration {
         // font-family: $title-font;
@@ -18,12 +20,13 @@
     }
 }
 
+// .navbar-vertical.slide-in {
+//     left: 0;
+//   }
+
 .hidden {
     display: none;
 }
-
-
-
 
 
 .logo-wrapper{
