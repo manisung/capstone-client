@@ -1,6 +1,7 @@
 import "./MembersPage.scss";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
+import fansclubLogo from "../../assets/logos/logo-pink.svg"
 
 function MembersPage() {
 
@@ -17,10 +18,10 @@ function handleSignUp() {
 
   return (
     <div className="memberpage">
-      <div>{/* need to add a pic */}</div>
+      <div className="memberpage__logo-wrapper"><img className="memberpage__logo" src={fansclubLogo} alt="Fansclub Logo" /></div>
       <div className="memberpage__sub-wrapper">
       <div className="memberpage__join">
-        <div className="memberpage__join-text">Become a member</div>
+        <div className="memberpage__join-text">Become a member!</div>
         <Button onClick={handleSignUp} text="Join Now!" className="button-joinnow"/>
       </div>
       <div className="memberpage__signin">

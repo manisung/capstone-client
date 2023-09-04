@@ -20,8 +20,8 @@ function EventsPage() {
         }, []);
 
     return (
-        <div>
-        <div className="event__title">Events</div>
+        <div className="eventpage">
+        <div className="eventpage__title">Events</div>
         <EventsList events={events}/>
         </div>
     )

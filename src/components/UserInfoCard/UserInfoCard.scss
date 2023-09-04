@@ -2,13 +2,53 @@
 @use "../../styles/variables" as *;
 
 .userinfo{
-    &__title {
-    font-family: $title-font;
-    text-transform: uppercase;
-    font-size: 1.25rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    padding: 2rem;
+    width: 65%;
+    font-family:$text-font;
+    display: flex;
+    flex-direction: column;
+    // border: 1px solid $background-color-dark;
+    border-radius: 1.5rem;
+    margin-top: 1rem;
+    margin-left: 1rem;
+
+
+&__name-wrapper{
+    display: flex;
+    align-items: center;
+    margin: 1rem 0 1rem 2rem;
+}
+&__avatar {
+    width: 2rem;
+    height: 2rem;
+    border-radius: 2rem;
+    border: 1px solid #ee3d96;
+    background-color: $cta-color;
+    margin-right: 1rem;
+}
+
+   
+    &__phone-wrapper {
+        display: flex;
+        margin: 0rem 0 1rem 2rem;
     }
+    &__phone-title {
+        padding-right:1rem;
+    }
+    &__phone-content{
+
+    }
+    &__email-wrapper{
+        display: flex;
+        margin: 0rem 0 1rem 2rem;
+    }
+
+    &__email-title {
+        padding-right:1rem;
+    }
+    &__email-content {
+        
+    }
+
+
+    
 }

@@ -11,6 +11,7 @@
     // left: 0;
     text-decoration: none;
     transition: left 0.5s ease;
+    text-transform: uppercase;
     &__no-text-decoration {
         color: $cta-color;
         text-decoration: none;

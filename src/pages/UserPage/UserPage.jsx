@@ -45,12 +45,14 @@ function UserPage() {
       console.log("selected user events", selectedUserEvents);
 
     return(
-        <div>
-          
+        <div className="userpage">
+          <div className="userpage__title">User Information</div>
+          {loggedIn ? <p className="userpage__loginstatus">You're logged in!</p> : <p>I'm not logged in!!</p>}
             <UserInfoCard selectedUser={selectedUser} />
-            {loggedIn ? <p>You're logged in!</p> : <p>I'm not logged in!!</p>}
+            
+            <div className="userpage__event-registered">Events Registered</div>
             <UserEventsList selectedUserEvents={selectedUserEvents} />
-            <div>Find More Event</div>
+            <div className="userpage__event-more" >Discouver More Event</div>
         </div>
     )
 }

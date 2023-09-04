@@ -2,7 +2,8 @@ import "./LogInPage.scss";
 import Button from "../../components/Button/Button";
 import { useNavigate } from "react-router-dom";
 // import { useParams } from "react-router-dom";
-import fansclubLogo from "../../assets/logos/logo.svg"
+// import fansclubLogo from "../../assets/logos/logo.svg"
+import fansclubLogo from "../../assets/logos/logo-pink.svg"
 
 function LogInPage() {
   const navigate = useNavigate();
@@ -20,9 +21,9 @@ function LogInPage() {
   }
 
   return (
-    <div>
+    <div className="signin">
       <img className="signin__logo" src={fansclubLogo} alt="Fansclub Logo" />
-      <div className="signin">Sign in</div>
+      <div className="signin__title">Sign in</div>
       <form className="signin__form">
         <input
           className="signin__box"
@@ -42,7 +43,8 @@ function LogInPage() {
 
       {/* button needs to have separate class name too */}
       </div>
-      <div>Forgot your password?</div>
+      <div className="signin__forgotpsw">Forgot your password?</div>
+      {/* TODO: add change password function later */}
     </div>
   );
 }
