@@ -1,4 +1,4 @@
-import "./EventCardDetals.scss";
+import "./EventCardDetails.scss";
 import Button from "../Button/Button";
 import axios from "axios";
 // import { useState, useEffect } from "react";
@@ -6,9 +6,13 @@ import axios from "axios";
 
 // TODO: make this single event page
 
-// function EventCardDetails(props) {
+function EventCardDetails() {
 
-//   console.log(props.events);
+    return (
+        <div>This is the event detail page</div>
+    )
+
+};
 
 //   function handleRegistration(event, eventId) {
 //     event.preventDefault();
@@ -78,4 +82,4 @@ import axios from "axios";
 //   );
 // }
 
-// export default EventCardDetails;
+export default EventCardDetails;

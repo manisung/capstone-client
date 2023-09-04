@@ -38,12 +38,14 @@
     &__button-wrapper{
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        // justify-content: center;
   }
-//   &__button-signin {
-//     justify-content: center;
-//   }
-//   &__button-back {
-//     justify-content: center;
-//   }
+  &__button-signin {
+    // justify-content: center;
+    margin: auto;
+  }
+  &__button-back {
+    // justify-content: center;
+    margin: auto;
+  }
 }

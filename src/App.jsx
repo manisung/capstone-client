@@ -13,6 +13,7 @@ import AdminPage from './pages/AdminPage/AdminPage';
 import AboutPage from './pages/AboutPage/AboutPage';
 import StorePage from './pages/StorePage/StorePage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
+import EventDetailsPage from './pages/EventDetailsPage/EventDetailsPage';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
       <Route path="/user" element={<UserPage />} />
       <Route path="/videolist" element={<VideosListPage />} />
       <Route path="/events" element={<EventsPage />} />
+      <Route path="/events/:id" element={<EventDetailsPage />} />
       <Route path="/admins/:id" element={<AdminPage />} />
       <Route path="/store" element={<StorePage />} />
     </Routes>
