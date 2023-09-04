@@ -45,7 +45,7 @@ function EventsList(props) {
             <li onClick={clickEvent} key={event.id}>
               <div className="event-card">
                 <div className="event-card__image-wrapper">
-                  <img className="event-card__image" src={defaultEventImg} alt="Event Picture" />
+                  <img className="event-card__image" src={defaultEventImg} alt="Event Scene" />
                 </div>
                 <div className="event-card__info">
                   <p className="event-card__date">{event.date}</p>
