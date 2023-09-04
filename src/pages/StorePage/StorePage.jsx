@@ -2,7 +2,10 @@ import "./StorePage.scss"
 
 function StorePage() {
     return (
-        <div className="storepage">this is the store page</div>
+        <div className="storepage">
+            <div className="storepage__title">Coming Soon</div>
+            <div className="storepage__title-2">Stay Tuned</div>
+        </div>
     )
 }
 

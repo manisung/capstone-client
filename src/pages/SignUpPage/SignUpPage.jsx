@@ -12,6 +12,10 @@ function SignUpPage() {
         navigate("/login");
     }
 
+    function handleBackToMember() {
+        navigate("/members");
+      }
+
 
     return(
 
@@ -24,6 +28,7 @@ function SignUpPage() {
             <input className="signup__box" type="password" placeholder="Confirm Password"/>
             <Button onClick={completeSignUp} text="sign up" className="button-signup"/>
             {/* button needs to have separate class name too */}
+            <Button className="button-back" onClick={handleBackToMember} text="Back" />
             </form>
         </div>
     )

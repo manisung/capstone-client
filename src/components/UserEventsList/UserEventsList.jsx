@@ -1,7 +1,16 @@
 import Button from "../Button/Button";
 import "./UserEventsList.scss";
+import { useNavigate } from "react-router-dom";
 
 function UserEventsList(props) {
+
+  const navigate = useNavigate();
+
+  function cancelRegistration() {
+    navigate("/events")
+
+  }
+  
   return (
     <div>
       <ul>
@@ -21,7 +30,7 @@ function UserEventsList(props) {
               <p className="usereventslist__eventdate-title">Date:</p>
               <p>{selectedUserEvent.date}</p>
               </div>
-              <Button onClick="" text="Cancel Registration" className="button-cancelregistration"/>
+              <Button onClick={cancelRegistration} text="Cancel Registration" className="button-cancelregistration"/>
             </li>
           );
         })}
