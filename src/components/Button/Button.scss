@@ -8,7 +8,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color: #232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -27,7 +27,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color: #232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -35,7 +35,7 @@
   height: 58px;
   flex-shrink: 0;
   border: none;
-  margin: 2rem;
+  margin: 1rem auto;
   
 }
 //TODO: add class to different buttons
@@ -48,7 +48,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color: #232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -56,7 +56,8 @@
   height: 58px;
   flex-shrink: 0;
   border: none;
-  margin: 2rem;
+  padding: 1rem;
+  margin: 1rem auto;
   
 }
 
@@ -68,7 +69,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color: #232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -88,7 +89,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color:	#232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -108,7 +109,7 @@
   height: 2rem;
   font-weight: 700;
   border-radius: 0.75rem;
-  background-color: #767676;
+  background-color: #232b2b;
   color: #fff;
   text-transform: uppercase;
   padding: 0.5rem;
@@ -117,4 +118,23 @@
   flex-shrink: 0;
   border: none;
   margin: 2rem;
+}
+
+.button-cancelregistration{
+  justify-content: center;
+  font-family: $title-font;
+  font-size: 0.8rem;
+  width: 10rem;
+  line-height: 1.5;
+  height: auto;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  background-color: #232b2b;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.5rem;
+  flex-shrink: 0;
+  border: none;
+  margin: 1rem auto;
+
 }

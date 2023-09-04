@@ -5,10 +5,22 @@
     width: 100%;
     height: $mobile-screen-height;
     background-color: $cta-color;
+    font-family: $title-font;
+    font-size: 1.3rem;
+    &__logo-wrapper{
+
+    }
+    &__logo {
+        display: flex;
+        margin: auto;
+        width: 140px;
+        height: auto;
+        padding: 1rem;
+    }
     &__sub-wrapper{
         display: flex;
         flex-direction: column;
-        padding-top: 6rem;
+        padding-top: 0rem;
     }
     &__join{
         display: flex;

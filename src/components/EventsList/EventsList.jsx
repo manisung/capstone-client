@@ -31,7 +31,7 @@ function EventsList(props) {
   }
 
   function clickEvent() {
-    navigate("/");
+    navigate("/events/:id");
     //TODO: grabbing the event id and navigate to the specific event detail page
   }
 

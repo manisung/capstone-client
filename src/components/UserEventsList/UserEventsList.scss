@@ -1,2 +1,29 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
+
+.usereventslist{
+    display: flex;
+    flex-direction: column;
+    
+    &__eventname-wrapper{
+        display: flex;
+        margin: auto;
+    }
+    &__eventname-title {
+        padding-right: 1rem;
+    }
+    &__eventlocation-wrapper{
+        display: flex;
+        margin: auto;
+    }
+    &__eventlocation-title {
+        padding-right: 1rem;
+    }
+    &__eventdate-wrapper{
+        display: flex;
+        margin: auto;
+    }
+    &__eventdate-title {
+        padding-right: 1rem;
+    }
+}

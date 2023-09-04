@@ -2,13 +2,13 @@
 @use "../../styles/variables" as *;
 
 .event-card {
-  width: 70%;
+  width: 90%;
   font-size: 0.75rem;
   display: flex;
   margin: auto;
   align-items: center;
   border-radius: 0.5rem;
-  background-color: $cta-color;
+  background-color: white;
   padding: 1rem;
 
   &__image-wrapper {
