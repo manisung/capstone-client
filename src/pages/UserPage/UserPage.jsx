@@ -1,7 +1,6 @@
 import "./UserPage.scss";
 import { useState, useEffect } from "react";
 import axios from "axios";
-import { useParams } from "react-router-dom";
 import UserInfoCard from "../../components/UserInfoCard/UserInfoCard";
 import UserEventsList from "../../components/UserEventsList/UserEventsList";
 
@@ -49,7 +48,6 @@ function UserPage() {
           <div className="userpage__title">User Information</div>
           {loggedIn ? <p className="userpage__loginstatus">You're logged in!</p> : <p>I'm not logged in!!</p>}
             <UserInfoCard selectedUser={selectedUser} />
-            
             <div className="userpage__event-registered">Events Registered</div>
             <UserEventsList selectedUserEvents={selectedUserEvents} />
             <div className="userpage__event-more" >Discouver More Event</div>

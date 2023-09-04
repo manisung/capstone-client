@@ -4,7 +4,7 @@ import axios from "axios";
 // import { useState, useEffect } from "react";
 import mapPinIcon from "../../assets/icons/map-pin.svg"
 import defaultEventImg from "../../assets/images/default-event-image.png";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link} from "react-router-dom";
 
 function EventsList(props) {
   console.log(props.events);
@@ -31,7 +31,8 @@ function EventsList(props) {
   }
 
   function clickEvent() {
-    navigate("/events/:id");
+    navigate("/events/1");
+    // navigate("/events/:id");
     //TODO: grabbing the event id and navigate to the specific event detail page
   }
 
