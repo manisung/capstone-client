@@ -33,7 +33,7 @@
         overflow: hidden;
         border-right: 1px solid #000; /* Add a blinking cursor effect */
         font-size: 24px;
-        animation: typing 3s steps(40, end), blink-caret 0.5s step-end infinite;
+        animation: typing 4s steps(40, end), blink-caret 0.5s step-end infinite;
       }
 
       @keyframes typing {
