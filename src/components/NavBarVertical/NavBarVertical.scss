@@ -7,22 +7,20 @@
     background-color: $background-color-dark;
     position: absolute;
     top: 4rem;
-    // left: -100%;
-    left: 0;
+    left: -100%;
+    // left: 0;
     text-decoration: none;
-    // transition: left 0.3s ease;
-    // border: .0625rem solid $text-color;
+    transition: left 0.5s ease;
     &__no-text-decoration {
-        // font-family: $title-font;
         color: $cta-color;
         text-decoration: none;
         
     }
 }
 
-// .navbar-vertical.slide-in {
-//     left: 0;
-//   }
+.navbar-vertical.slide-in {
+    left: 0;
+  }
 
 .hidden {
     display: none;

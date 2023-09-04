@@ -26,7 +26,7 @@ function NavBar() {
           <div className="fourth-bar"></div>
           <div className="fifth-bar"></div>
         </div>
-        <NavBarVertical onClick={handleToggle} className={isHidden? "hidden" : ""}/>
+        <NavBarVertical onClick={handleToggle} className={isHidden? "slide-in" : ""}/>
       </div>
     </>
   );
