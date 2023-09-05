@@ -7,8 +7,8 @@ let PORT;
 
 if(process.env.NODE_ENV === 'production'){
     PORT = '';
-} {
-    `:${process.env.REACT_APP_PORT}`;
+} else {
+    PORT = `:${process.env.REACT_APP_PORT}`;
 }
 
 function EventsPage() {
