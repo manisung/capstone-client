@@ -3,6 +3,7 @@ import "./VideosList.scss";
 //TODO: Added styles, and don‘t flow over the vertical menu
 
 function VideosList(props) {
+  console.log('props.video', props.video)
   return (
     <div className="videoslist">
       <div className="videoslist__title">Music Videos</div>
