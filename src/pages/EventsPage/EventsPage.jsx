@@ -5,6 +5,8 @@ import "./EventsPage.scss";
 
 let PORT;
 
+console.log('NODE_ENV', process.env.NODE_ENV)
+
 if(process.env.NODE_ENV === 'production'){
     PORT = '';
 } else {
