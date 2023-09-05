@@ -1,34 +1,94 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-
-
-.event-name-wrapper{
+.eventcard-details {
+    width: 100%;
+    height: 932px;
     display: flex;
-    font-size: 0.7rem;
-}
+    flex-direction: column;
+    &__titleimage-wrapper{
+        width: 100%;
 
-.event-description-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
+    }
+    &__titleimage {
+        width: 100%;
+    }
+    &__title{
+        font-family: $title-font;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem;
+    @include tablet {
+        font-size: 1.5rem;
+        padding: 3rem 2rem;
+      }
+    @include desktop {
+        font-size: 2rem;
+        padding: 3rem 2rem;
+      }
+    }
 
-.event-status-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
-
-.event-location-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
-
-.event-date-wrapper {
-    display: flex;
-    font-size: 0.7rem;
-}
-
-.event-deadline-wrapper {
-    display: flex;
-    font-size: 0.7rem;
+    &__sub-wrapper{
+        margin-bottom: 2rem;
+    }
+    &__eventname{
+        font-family: $title-font;
+        padding: 1rem 0 2rem 0;
+        text-align: center;
+    }
+    &__date-wrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        // margin-top: 1rem
+    }
+    &__datelogo {
+        padding-right: 1rem;
+    }
+    &__date {
+        font-family: $text-font;
+    }
+    &__location-wrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        margin-top: 1rem
+    }
+    &__locationlogo {
+        padding-right: 1rem;
+    }
+    &__location {
+        font-family: $text-font;
+    }
+    &__description-wrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        margin-top: 1rem
+    }
+    &__descriptionlogo {
+        width:70px;
+        height:70px;
+        padding-right: 1rem;
+    }
+    &__description {
+        font-family: $text-font;
+    }
+    &__deadline-wrapper{
+        display: flex;
+        align-items: center;
+        margin-left: 5rem;
+        margin-top: 1rem
+    }
+    &__deadlinelogo {
+        width:70px;
+        height:40px;
+        padding-right: 1rem;
+    }
+    &__deadline {
+        font-family: $text-font;
+    }
 }

@@ -3,7 +3,7 @@ import "./StorePage.scss"
 function StorePage() {
     return (
         <div className="storepage">
-            <div className="storepage__title">Coming Soon</div>
+            <div className="storepage__title">Store Page is Coming Soon</div>
             <div className="storepage__title-2">Stay Tuned</div>
         </div>
     )

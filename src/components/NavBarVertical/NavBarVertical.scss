@@ -4,6 +4,7 @@
 .navbar-vertical {
     width: 100vw;
     height: $mobile-screen-height;
+    // font-weight: 700;
     background-color: $background-color-dark;
     position: absolute;
     top: 4rem;
@@ -14,8 +15,12 @@
     text-transform: uppercase;
     &__no-text-decoration {
         color: $cta-color;
-        text-decoration: none;
-        
+        text-decoration: none;     
+    }
+    &__admins {
+        font-size: 1rem;
+        font-family: $text-font;
+        margin: auto;
     }
 }
 
@@ -27,6 +32,11 @@
     display: none;
 }
 
+.logo-admins-wrapper{
+    display: flex;
+    flex-direction: column;
+    
+}
 
 .logo-wrapper{
     display: flex;

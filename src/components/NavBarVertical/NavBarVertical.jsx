@@ -57,10 +57,12 @@ function NavBarVertical(props) {
           >
             <li>My Information</li>
           </Link>
+       
         </ul>
       </div>
+      <div className="logo-admins-wrapper">
       <div className="logo-wrapper">
-        <a href="https://instagram.com/yumichung1221?igshid=MzRlODBiNWFlZA==">
+      <a href="https://instagram.com/yumichung1221?igshid=MzRlODBiNWFlZA==">
           <img
             className="instagram-logo"
             src={instagramLogo}
@@ -71,7 +73,16 @@ function NavBarVertical(props) {
         <a href="https://youtube.com/@yumichung1221?si=v08ze49mA3KNPYSv">
           <img className="youtube-logo" src={youtubeLogo} alt="Youtube Logo" />
         </a>
+        </div>
+        <Link
+            className="navbar-vertical__no-text-decoration navbar-vertical__admins"
+            onClick={props.onClick}
+            to="/admins/1"
+          >
+            Adminstrator Log In
+      </Link>
       </div>
+     
     </div>
   );
 }
