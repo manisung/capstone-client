@@ -4,6 +4,17 @@ import axios from "axios";
 import UserInfoCard from "../../components/UserInfoCard/UserInfoCard";
 import UserEventsList from "../../components/UserEventsList/UserEventsList";
 
+let PORT;
+
+console.log('NODE_ENV', process.env.NODE_ENV)
+
+if(process.env.NODE_ENV === 'production'){
+    PORT = '';
+} else {
+    PORT = `:${process.env.REACT_APP_PORT}`;
+}
+
+
 function UserPage() {
 
     const[selectedUser, setSelectedUser] = useState ({});
@@ -21,7 +32,7 @@ function UserPage() {
         if (userId) {
           axios
             .get(
-              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}`
+              `${process.env.REACT_APP_API_URL}${PORT}/users/${userId}`
             )
             .then((response) => {   
                 setSelectedUser(response.data);
@@ -30,7 +41,7 @@ function UserPage() {
 
             axios
             .get(
-              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}/events`
+              `${process.env.REACT_APP_API_URL}${PORT}/users/${userId}/events`
             )
             .then((response) => {
               setSelectedUserEvents(response.data);

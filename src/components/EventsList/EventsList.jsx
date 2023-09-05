@@ -6,6 +6,17 @@ import mapPinIcon from "../../assets/icons/map-pin.svg"
 import defaultEventImg from "../../assets/images/default-event-image.png";
 import { useNavigate} from "react-router-dom";
 
+let PORT;
+
+console.log('NODE_ENV', process.env.NODE_ENV)
+
+if(process.env.NODE_ENV === 'production'){
+    PORT = '';
+} else {
+    PORT = `:${process.env.REACT_APP_PORT}`;
+}
+
+
 function EventsList(props) {
   console.log(props.events);
   const navigate = useNavigate();
@@ -17,7 +28,7 @@ function EventsList(props) {
 
     axios
       .get(
-        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}/events/${eventId}`
+        `${process.env.REACT_APP_API_URL}${PORT}/users/${userId}/events/${eventId}`
       )
       .then((response) => {
         // setSelectedUserEvents(response.data);

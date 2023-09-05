@@ -12,6 +12,16 @@ import { useNavigate } from "react-router-dom";
 
 // TODO: make this single event page
 
+let PORT;
+
+console.log('NODE_ENV', process.env.NODE_ENV)
+
+if(process.env.NODE_ENV === 'production'){
+    PORT = '';
+} else {
+    PORT = `:${process.env.REACT_APP_PORT}`;
+}
+
 function EventCardDetails() {
   const [selectedEvent, setSelectedEvent] = useState({});
   // const { id } = useParams();
@@ -24,7 +34,7 @@ function EventCardDetails() {
 
   useEffect(() => {
     axios
-      .get(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/events/1`)
+      .get(`${process.env.REACT_APP_API_URL}${PORT}/events/1`)
       .then((response) => {
         setSelectedEvent(response.data);
       })

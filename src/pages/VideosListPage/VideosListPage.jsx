@@ -3,6 +3,16 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import VideosList from "../../components/VideosList/VideosList";
 
+let PORT;
+
+console.log('NODE_ENV', process.env.NODE_ENV)
+
+if(process.env.NODE_ENV === 'production'){
+    PORT = '';
+} else {
+    PORT = `:${process.env.REACT_APP_PORT}`;
+}
+
 function VideosListPage() {
     const[videos, setVideos] = useState ([]);
 
@@ -11,7 +21,7 @@ function VideosListPage() {
     useEffect(() => {   
           axios
             .get(
-              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/videos`
+              `${process.env.REACT_APP_API_URL}${PORT}/videos`
             )
             .then((response) => {   
                 setVideos(response.data);
