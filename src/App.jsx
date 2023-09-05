@@ -1,6 +1,6 @@
 import './App.scss';
 import NavBar from './components/NavBar/NavBar';
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import LandingPage from './pages/LandingPage/LandingPage';
 // import { useEffect } from "react";
 import Footer from "./components/Footer/Footer";

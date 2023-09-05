@@ -24,7 +24,7 @@ function EventCardDetails() {
 
   useEffect(() => {
     axios
-      .get(`http://localhost:${process.env.REACT_APP_PORT}/events/1`)
+      .get(`${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/events/1`)
       .then((response) => {
         setSelectedEvent(response.data);
       })

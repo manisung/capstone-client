@@ -11,7 +11,7 @@ function VideosListPage() {
     useEffect(() => {   
           axios
             .get(
-              `http://localhost:${process.env.REACT_APP_PORT}/videos`
+              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/videos`
             )
             .then((response) => {   
                 setVideos(response.data);

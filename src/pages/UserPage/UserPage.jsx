@@ -21,7 +21,7 @@ function UserPage() {
         if (userId) {
           axios
             .get(
-              `http://localhost:${process.env.REACT_APP_PORT}/users/${userId}`
+              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}`
             )
             .then((response) => {   
                 setSelectedUser(response.data);
@@ -30,7 +30,7 @@ function UserPage() {
 
             axios
             .get(
-              `http://localhost:${process.env.REACT_APP_PORT}/users/${userId}/events`
+              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}/events`
             )
             .then((response) => {
               setSelectedUserEvents(response.data);

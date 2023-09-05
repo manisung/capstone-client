@@ -11,7 +11,7 @@ function EventsPage() {
     useEffect(() => {
           axios
             .get(
-              `http://localhost:${process.env.REACT_APP_PORT}/events`
+              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/events`
             )
             .then((response) => {   
                 setEvents(response.data);
