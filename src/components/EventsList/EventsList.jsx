@@ -17,7 +17,7 @@ function EventsList(props) {
 
     axios
       .get(
-        `http://localhost:${process.env.REACT_APP_PORT}/users/${userId}/events/${eventId}`
+        `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/users/${userId}/events/${eventId}`
       )
       .then((response) => {
         // setSelectedUserEvents(response.data);
