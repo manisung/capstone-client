@@ -4,7 +4,7 @@ import axios from "axios";
 // import { useState, useEffect } from "react";
 import mapPinIcon from "../../assets/icons/map-pin.svg"
 import defaultEventImg from "../../assets/images/default-event-image.png";
-import { useNavigate, Link} from "react-router-dom";
+import { useNavigate} from "react-router-dom";
 
 function EventsList(props) {
   console.log(props.events);

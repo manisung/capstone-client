@@ -4,6 +4,10 @@
 .usereventslist{
     display: flex;
     flex-direction: column;
+    @include desktop {
+        font-size: 1.2rem;
+        padding: 2rem;
+      }
     
     &__eventname-wrapper{
         display: flex;

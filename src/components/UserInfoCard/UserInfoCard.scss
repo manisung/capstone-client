@@ -9,7 +9,11 @@
     // border: 1px solid $background-color-dark;
     border-radius: 1.5rem;
     margin-top: 1rem;
-    margin-left: 1rem;
+    margin-left: 2rem;
+    @include desktop {
+        font-size: 1.2rem;
+        padding: 2rem 1.5rem;
+      }
 
 
 &__name-wrapper{
@@ -34,9 +38,9 @@
     &__phone-title {
         padding-right:1rem;
     }
-    &__phone-content{
+    // &__phone-content{
 
-    }
+    // }
     &__email-wrapper{
         display: flex;
         margin: 0rem 0 1rem 2rem;
@@ -45,9 +49,9 @@
     &__email-title {
         padding-right:1rem;
     }
-    &__email-content {
+    // &__email-content {
         
-    }
+    // }
 
 
     

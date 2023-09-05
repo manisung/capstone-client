@@ -13,6 +13,14 @@
     font-weight: 400;
     line-height: normal;
     padding: 2rem;
+    @include tablet {
+      font-size: 1.5rem;
+      padding: 3rem 2rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+      padding: 3rem 2rem;
+    }
   }
   &__video {
     width: 90%;
@@ -27,6 +35,9 @@
     justify-content: center;
     color: $background-color-dark;
     font-family: $title-font;
+    @include desktop {
+      font-size: 1.5rem;
+    }
   }
   //   &__description {
   //   }
