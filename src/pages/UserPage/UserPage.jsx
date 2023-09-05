@@ -46,7 +46,7 @@ function UserPage() {
     return(
         <div className="userpage">
           <div className="userpage__title">User Information</div>
-          {loggedIn ? <p className="userpage__loginstatus">You're logged in!</p> : <p>I'm not logged in!!</p>}
+          {loggedIn ? <p className="userpage__loginstatus">Welcome Back!</p> : <p>Please Log In!</p>}
             <UserInfoCard selectedUser={selectedUser} />
             <div className="userpage__event-registered">Events Registered</div>
             <UserEventsList selectedUserEvents={selectedUserEvents} />

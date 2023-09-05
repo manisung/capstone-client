@@ -13,10 +13,22 @@
         font-weight: 400;
         line-height: normal;
         padding: 2rem;
+        @include tablet {
+            font-size: 1.5rem;
+            padding: 3rem 2rem;
+          }
+        @include desktop {
+            font-size: 2rem;
+            padding: 3rem 2rem;
+          }
     }
     &__loginstatus{
         font-family: $text-font;
-        padding: 0 2rem;
+        padding: 0 3rem;
+        @include desktop {
+            font-size: 1.6rem;
+            padding: 2rem 3rem ;
+          }
     }
     &__event-registered {
         font-family: $title-font;
