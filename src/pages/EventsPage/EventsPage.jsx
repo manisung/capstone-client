@@ -3,6 +3,14 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import "./EventsPage.scss";
 
+let PORT;
+
+if(process.env.NODE_ENV === 'production'){
+    PORT = '';
+} {
+    `:${process.env.REACT_APP_PORT}`;
+}
+
 function EventsPage() {
     const[events, setEvents] = useState ([]);
 
@@ -11,7 +19,7 @@ function EventsPage() {
     useEffect(() => {
           axios
             .get(
-              `${process.env.REACT_APP_API_URL}:${process.env.REACT_APP_PORT}/events`
+              `${process.env.REACT_APP_API_URL}${PORT}/events`
             )
             .then((response) => {   
                 setEvents(response.data);
