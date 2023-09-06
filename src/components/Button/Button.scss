@@ -156,3 +156,27 @@
   border: none;
   margin: 0 auto;
 }
+
+.button-signout {
+  justify-content: center;
+  font-family: $title-font;
+  font-size: 0.65rem;
+  width: 6rem;
+  line-height: 1.5;
+  height: auto;
+  font-weight: 700;
+  border-radius: 0.75rem;
+  background-color: #232b2b;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0.2rem;
+  flex-shrink: 0;
+  border: none;
+  margin-left: 3rem;
+  margin-top: 1rem;
+
+  // margin: auto;
+}
+.button-disabled {
+  background: grey;
+}

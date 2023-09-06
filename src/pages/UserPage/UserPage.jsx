@@ -3,6 +3,8 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import UserInfoCard from "../../components/UserInfoCard/UserInfoCard";
 import UserEventsList from "../../components/UserEventsList/UserEventsList";
+import { useNavigate } from "react-router-dom";
+import Button from "../../components/Button/Button";
 
 let PORT;
 
@@ -16,6 +18,17 @@ if(process.env.NODE_ENV === 'production'){
 
 
 function UserPage() {
+
+  const navigate = useNavigate();
+  // const { id } = useParams();
+
+  function handleSignOut() {
+    // localStorage.setItem("userId", 1);
+    localStorage.removeItem('userId');
+
+    navigate("/login");
+    // if here needs to be Dynamic, how? now is just faking it
+  }
 
     const[selectedUser, setSelectedUser] = useState ({});
     const[selectedUserEvents, setSelectedUserEvents] = useState ([]);
@@ -57,7 +70,8 @@ function UserPage() {
     return(
         <div className="userpage">
           <div className="userpage__title">User Information</div>
-          {loggedIn ? <p className="userpage__loginstatus">Welcome Back!</p> : <p>Please Log In!</p>}
+          {loggedIn ? <p className="userpage__loginstatus">Welcome Back, {selectedUser.name}!</p> : <p>Please Log In!</p>}
+          <Button className="button-signout" onClick={handleSignOut} text="Sign Out" />
             <UserInfoCard selectedUser={selectedUser} />
             <div className="userpage__event-registered">Events Registered</div>
             <UserEventsList selectedUserEvents={selectedUserEvents} />
