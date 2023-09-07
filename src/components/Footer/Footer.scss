@@ -6,8 +6,8 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 100%;
-    height: 3rem;
+    width: 100%; 
+    height: 3.5rem; //changed here for deployment
     font-family: $title-font;
     font-size: 1rem;
     color: $cta-color;
