@@ -1,9 +1,11 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-.about{
+.about {
+    width: 100%;
+    min-height: 932px;
     background-color: $cta-color;
-&__title {
+  &__title {
     font-family: $title-font;
     text-transform: uppercase;
     font-size: 20px;
@@ -12,72 +14,72 @@
     line-height: normal;
     padding: 2rem;
     @include tablet {
-        font-size: 1.5rem;
-        padding: 3rem 2rem;
-      }
+      font-size: 1.5rem;
+      padding: 3rem 2rem;
+    }
     @include desktop {
-        font-size: 2rem;
-        padding: 3rem 2rem;
-      }
-}
-&__content-wrapper {
-    margin: 1rem;
+      font-size: 2rem;
+      padding: 3rem 2rem;
+    }
+  }
+  &__content-wrapper {
+    margin: 0rem 1rem;
     font-family: $text-font;
     display: flex;
     flex-direction: column;
-}
-&__sub-title {
+  }
+  &__sub-title {
     font-family: $text-font;
     font-style: italic;
     font-weight: 700;
     padding: 2rem;
     font-size: 1rem;
     @include tablet {
-        font-size: 1.2rem;
-        padding: 2rem;
-      }
+      font-size: 1.2rem;
+      padding: 2rem;
+    }
     @include desktop {
-        font-size: 1.6rem;
-        padding: 2rem;
-      }
-}
-&__image-wrapper{
-width: 90%;
-height: auto;
-background-color: $background-color-dark;
-display: flex;
-justify-content: center;
-border-radius: 1rem;
-margin: auto;
-}
-&__image-1 {
+      font-size: 1.6rem;
+      padding: 2rem;
+    }
+  }
+  &__image-wrapper {
+    width: 60vh;
+    height: 35vh;
+    background-color: $background-color-dark;
+    display: flex;
+    justify-content: center;
+    border-radius: 1rem;
+    margin: auto;
+  }
+  &__image-1 {
     width: 80%;
     height: auto;
     object-fit: cover;
-}
-&__image-2 {
+  }
+  &__image-2 {
     width: 80%;
     height: auto;
     object-fit: cover;
     object-position: 0 -2.9rem;
-}
-&__image-3 {
+  }
+  &__image-3 {
     width: 80%;
     height: auto;
     object-fit: cover;
-}
+  }
 
-&__description {
+  &__description {
     font-size: 0.8rem;
     line-height: 1.5;
     padding: 1rem;
     @include tablet {
-        font-size: 1.2rem;
-        padding: 2rem 6rem;
-      }
+      font-size: 1.2rem;
+      padding: 2rem 6rem;
+    }
     @include desktop {
-        font-size: 1.2rem;
-        padding: 2rem 10rem;
-      }
-}
+      font-size: 1.2rem;
+      padding: 2rem 10rem;
+    }
+  }
 }

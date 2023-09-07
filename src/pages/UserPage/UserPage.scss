@@ -3,7 +3,7 @@
 
 .userpage {
     width: 100%;
-    height: auto;
+    min-height: 932px;
     background-color: $cta-color;
     &__title {
         font-family: $title-font;

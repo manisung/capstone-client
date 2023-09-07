@@ -1,23 +1,23 @@
 @use "../../styles/mixins" as *;
 @use "../../styles/variables" as *;
 
-.eventpage{
-        background-color: $cta-color;
-&__title {
-        font-family: $title-font;
-        text-transform: uppercase;
-        font-size: 20px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: normal;
-        padding: 2rem;
-        @include tablet {
-                font-size: 1.5rem;
-                padding: 3rem 2rem;
-              }
-        @include desktop {
-                font-size: 2rem;
-                padding: 3rem 2rem;
-              }
-}
+.eventpage {
+  background-color: $cta-color;
+  &__title {
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem;
+    @include tablet {
+      font-size: 1.5rem;
+      padding: 3rem 2rem;
+    }
+    @include desktop {
+      font-size: 2rem;
+      padding: 3rem 2rem;
+    }
+  }
 }

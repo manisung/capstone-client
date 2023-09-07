@@ -43,7 +43,6 @@ function EventCardDetails() {
 
   return (
     <div className="eventcard-details">
-      
       <div className="eventcard-details__titleimage-wrapper"><img className="eventcard-details__titleimage" src={eventPic} alt="Yumi singing with another Yumi singing overlay" /></div>
       <div className="eventcard-details__title">Event Details</div>
       <div className="eventcard-details__sub-wrapper">
@@ -73,8 +72,6 @@ function EventCardDetails() {
         <div className="eventcard-details__deadline">{selectedEvent.deadline}</div>
         
       </div>
-      
-      
       </div>
       <Button onClick={handleBackToEvents} text="Back to Events" className="button-backtoevents"/>
     </div>

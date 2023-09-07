@@ -19,8 +19,8 @@ function SignUpPage() {
 
     return(
 
-        <div>
-            <div className="signup">Sign up</div>
+        <div className="signup">
+            <div className="signup__title">Sign up</div>
             <form className="signup__form">
             <input className="signup__box" type="name" placeholder="Full Name"/>
             <input className="signup__box" type="email" placeholder="abc@email.com"/>

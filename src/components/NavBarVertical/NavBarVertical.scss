@@ -3,8 +3,8 @@
 
 .navbar-vertical {
     width: 100vw;
-    height: $mobile-screen-height;
-    // font-weight: 700;
+    min-height: 745px;
+    // height: $mobile-screen-height;
     background-color: $background-color-dark;
     position: absolute;
     top: 4rem;

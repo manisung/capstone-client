@@ -10,7 +10,6 @@ function AboutPage() {
         <div className="about__content-wrapper">
         <div className="about__sub-title">Early Childhood</div>
         <div className="about__image-wrapper"><img className="about__image-1" src={childhoodPic} alt="Yumi's childhood recording" /></div>
-        
         <div className="about__description">On October 5, 2014, Yumi, who was only 7 years old, won the children's vocal group in 
         the "4th China Children's Little Golden Bell Music Competition and the 2nd 
         Hong Kong and Macau Finals" held at the Macau Fisherman's Wharf Convention and Exhibition Center.
