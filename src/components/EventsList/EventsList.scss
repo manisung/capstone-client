@@ -24,6 +24,7 @@
   &__image {
     width: 105px;
     height: 105px;
+    object-fit: cover;
     flex-shrink: 0;
     border: 1px solid $cta-color;
     border-radius: 0.5rem;
