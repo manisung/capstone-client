@@ -1,0 +1,54 @@
+@use "../../styles/mixins" as *;
+@use "../../styles/variables" as *;
+
+.adminsignin {
+  display: flex;
+  flex-direction: column;
+  &__title{
+    font-family: $title-font;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 2rem;
+  }
+    &__logo {
+        display: flex;
+        margin: auto;
+        width: 140px;
+        height: auto;
+        padding: 1rem;
+    }
+    &__form {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    &__box {
+      width: 317px;
+      height: 56px;
+      flex-shrink: 0;
+      border-radius: 12px;
+      border: 1px solid #e4dfdf;
+      background: #fff;
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 23px;
+      padding-left: 1.5rem;
+      margin: 1.1875rem 1.75rem;
+    }
+    &__button-wrapper{
+        display: flex;
+        flex-direction: column;
+  }
+  &__forgotpsw {
+    font-family: $text-font;
+    font-size: 1.2rem;
+    padding: 2rem;
+    margin: auto;
+
+  }
+
+}

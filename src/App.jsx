@@ -14,6 +14,7 @@ import AboutPage from './pages/AboutPage/AboutPage';
 import StorePage from './pages/StorePage/StorePage';
 import SignUpPage from './pages/SignUpPage/SignUpPage';
 import EventDetailsPage from './pages/EventDetailsPage/EventDetailsPage';
+import AdminLogInPage from './pages/AdminLogInPage/AdminLogInPage';
 
 function App() {
   return (
@@ -30,7 +31,8 @@ function App() {
       <Route path="/videolist" element={<VideosListPage />} />
       <Route path="/events" element={<EventsPage />} />
       <Route path="/events/:id" element={<EventDetailsPage />} />
-      <Route path="/admins/:id" element={<AdminPage />} />
+      <Route path="/adminlogin" element={<AdminLogInPage />}/>
+      <Route path="/admin" element={<AdminPage />} /> //for now, just build one admin for demo purpose
       <Route path="/store" element={<StorePage />} />
     </Routes>
     <Footer text="Yumi Chung Official Website" />

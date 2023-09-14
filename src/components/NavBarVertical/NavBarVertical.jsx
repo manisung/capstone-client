@@ -77,7 +77,7 @@ function NavBarVertical(props) {
         <Link
             className="navbar-vertical__no-text-decoration navbar-vertical__admins"
             onClick={props.onClick}
-            to="/admins/1"
+            to="/adminlogin"
           >
             Adminstrator Log In
       </Link>
